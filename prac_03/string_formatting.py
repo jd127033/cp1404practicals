@@ -34,10 +34,11 @@ numbers = [1, 19, 123, 456, -25]
 for i, number in enumerate(numbers, 1):
     print(f"Number {i} is {number:5}")
 
+# Prints the string commented below using f string formatting
 print(f"{year} {name} for about ${cost:,.0f}!")
 # 1922 Gibson L-5 CES for about $16,036!
 
-
+# Uses range function, for loop structure and f string formatting to produce matching output
 for j in range(11):
     power_result = 2**j
     print(f"2 ^{j:2} is {power_result:4}")
