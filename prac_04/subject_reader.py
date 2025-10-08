@@ -14,12 +14,12 @@ def main():
 
 
 def process_subject_info():
-    subject_data = load_data(FILENAME)
+    subject_data = load_subject_info(FILENAME)
     for info in subject_data:
         print(f"{info[0]} is taught by {info[1]:12} and has {info[2]:3} students")
 
 
-def load_data(filename=FILENAME):
+def load_subject_info(filename=FILENAME):
     """Read data from file formatted like: subject,lecturer,number of students."""
     input_file = open(filename)
     subject_info = []
