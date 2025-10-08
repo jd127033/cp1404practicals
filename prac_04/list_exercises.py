@@ -3,6 +3,8 @@
 REQUIRED_AMOUNT_OF_NUMBERS = 5
 number_count = 0
 number_list = []
+usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface', 'BaseStdIn',
+             'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
 
 while number_count < REQUIRED_AMOUNT_OF_NUMBERS:
     number = int(input("Number: "))
@@ -18,3 +20,14 @@ print(f"The last number is {number_list[-1]}")
 print(f"The smallest number is {smallest_number}")
 print(f"The largest number is {largest_number}")
 print(f"The average of the numbers is {average_number}")
+
+guess = input("What is your username? ")
+password_check = 0
+while password_check == 0:
+    if guess in usernames:
+        password_check = 1
+        print("Access Granted.")
+    else:
+        print("Access Denied")
+        guess = input("What is your username? ")
+
