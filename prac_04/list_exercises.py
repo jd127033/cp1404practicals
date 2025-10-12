@@ -11,6 +11,7 @@ while number_count < REQUIRED_AMOUNT_OF_NUMBERS:
     number_list.append(number)
     number_count += 1
 
+# Use inbuilt functions to determine special numbers
 smallest_number = min(number_list)
 largest_number = max(number_list)
 average_number = sum(number_list)/len(number_list)
@@ -21,6 +22,7 @@ print(f"The smallest number is {smallest_number}")
 print(f"The largest number is {largest_number}")
 print(f"The average of the numbers is {average_number}")
 
+""" Password checker program """
 guess = input("What is your username? ")
 password_check = 0
 while password_check == 0:

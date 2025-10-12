@@ -12,7 +12,7 @@ def main():
     #print(data)
     #process_subject_info()
 
-
+""" Process subject info presents results to user """
 def process_subject_info():
     subject_data = load_subject_info(FILENAME)
     for info in subject_data:
