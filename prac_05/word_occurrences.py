@@ -1,6 +1,8 @@
 """
 CP1404/CP5632 Practical
 Word Occurrences using dictionaries
+estimate: 20 min
+actual: 30 min
 """
 
 # Create Dictionary
