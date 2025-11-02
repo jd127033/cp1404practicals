@@ -1,7 +1,5 @@
 """
-CP1404/CP5632 Practical - Client code to use the Car class.
-Note that the import has a folder (module) in it.
-This is why we name our folders with no spaces or capitals, as valid module names.
+CP1404 Practical - Client code to use the Car class.
 """
 
 from prac_06.car import Car
@@ -14,6 +12,7 @@ def main():
     print(f"Car has fuel: {my_car.fuel}")
     print(my_car)
 
+    # Create limo with Car class, add fuel and drive
     my_limo = Car("Limo", 100)
     my_limo.add_fuel(20)
     print(f"Limo has fuel: {my_limo.fuel}")
