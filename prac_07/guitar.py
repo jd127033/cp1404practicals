@@ -1,4 +1,7 @@
-"""CP1404 Practical - Guitar class."""
+"""CP1404 Practical - Guitar class.
+Expected finish: 10 min
+Actual finish: 25 min
+"""
 
 class Guitar:
     """Represent a Guitar object."""
