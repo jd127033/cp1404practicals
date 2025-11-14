@@ -1,15 +1,15 @@
 """
 CP1404/CP5632 Practical
 Kivy GUI program to square a number
-Lindsay Ward, IT@JCU
-Started 13/10/2015
+Estimated Finish Time (Both .py and .kv): 20 min
+Finish Time: 25 min
 """
 
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.core.window import Window
 
-__author__ = 'Lindsay Ward'
+__author__ = 'Cameron Lane'
 
 
 class SquareNumberApp(App):
