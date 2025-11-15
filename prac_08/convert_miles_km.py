@@ -2,7 +2,7 @@
 CP1404/CP5632 Practical
 Kivy GUI program to convert miles to km
 Estimated Finish Time (Both .py and .kv): 20 min
-Finish Time: min
+Finish Time: 30min
 """
 
 from kivy.app import App
@@ -25,18 +25,18 @@ class ConvertMilesKmApp(App):
         return self.root
 
     def handle_increment(self, text, change):
+        """ Handle input incrementation. """
         result = self.convert_to_number(text) + change
         self.root.ids.input_miles.text = str(result)
 
 
     def handle_calculate(self, text):
-        """ handle calculation (could be button press or other call), output result to label widget """
+        """ Handle calculation (could be button press or other call), output result to label widget. """
         miles = self.convert_to_number(text)
         self.update_result(miles)
 
     def update_result(self, miles):
-        self.root.ids.output_label.text = str(miles * MILES_TO_KM_FACTOR)
-       # self.output_km = str(miles * MILES_TO_KM_FACTOR)
+       self.output_km = str(miles * MILES_TO_KM_FACTOR)
 
     @staticmethod
     def convert_to_number(text):
