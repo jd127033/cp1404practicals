@@ -2,7 +2,7 @@
 Prac 09 task - Taxi test
 Overview: Test taxi class
 Estimated finish: 20 min
-Finish:
+Finish: 20 min
 """
 
 from prac_09.taxi import Taxi
