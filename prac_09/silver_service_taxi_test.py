@@ -16,5 +16,5 @@ def main():
     print(new_taxi)
     assert new_taxi.get_fare() == 48.80
 
-main()
 
+main()
