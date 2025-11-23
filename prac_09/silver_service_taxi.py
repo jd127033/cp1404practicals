@@ -2,7 +2,7 @@
 CP1404/CP5632 Practical
 Silver Service Taxi class
 Estimated finish: 20 min
-Finish:
+Finish: 30 min
 """
 from prac_09.taxi import Taxi
 
@@ -20,3 +20,7 @@ class SilverServiceTaxi(Taxi):
     def __str__(self):
         """Return a string like a taxi but with additional flagfall info."""
         return f"{super().__str__()}, ${self.price_per_km} plus flagfall of ${self.flagfall:.2f}."
+
+    def get_fare(self):
+        """Return price for taxi trip including flagfall fee."""
+        return (self.current_fare_distance * self.price_per_km) + self.flagfall
