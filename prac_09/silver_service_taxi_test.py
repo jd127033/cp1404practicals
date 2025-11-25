@@ -9,7 +9,7 @@ from prac_09.silver_service_taxi import SilverServiceTaxi
 
 
 def main():
-    """SilverServiceTaxi Class Test"""
+    """SilverServiceTaxi Class Test."""
     new_taxi = SilverServiceTaxi("Fancy Cab", 100, 2)
     new_taxi.drive(18)
     print(new_taxi.get_fare())
