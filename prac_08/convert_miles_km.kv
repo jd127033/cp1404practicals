@@ -1,0 +1,28 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: input_miles
+            on_text: app.handle_calculate(self.text)
+            font_size: 48
+            multiline: False
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: 'Up'
+                # specifies the function in app class to call when the button is pressed, increases input miles
+                on_press: app.handle_increment(input_miles.text, 1)
+            Button:
+                text: 'Down'
+                # specifies the function in app class to call when the button is pressed, decreases input miles
+                on_press: app.handle_increment(input_miles.text, -1)
+    # Button:
+    #    text: 'Convert miles to km'
+    #    on_press: app.handle_calculate(input_miles.text)
+    Label:
+        id: output_label
+        text: app.output_km
+        font_size: 48
+        color: (1, 1, 0, 1) # Yellow colour code
+
